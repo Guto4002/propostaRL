@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>42.dev | Proposta para Gráfica RL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="images/logo-graficarl.png" type="image/png">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">42<span>.dev</span></div>
+    <div class="nav-links">
+      <a href="#problema">O desafio</a>
+      <a href="#solucao">Solução</a>
+      <a href="#fluxo">Fluxo</a>
+      <a href="#painel">Painel</a>
+      <a href="#precos">Investimento</a>
+      <a href="#comparativo">Comparativo</a>
+      <a href="#cronograma">Cronograma</a>
+      <a href="graficarl.html" class="nav-preview" target="_blank">Ver protótipo da loja</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-client">
+      <img src="images/logo-graficarl.png" alt="Gráfica RL">
+      <span class="hero-client-x">×</span>
+      <span class="hero-client-dev">42<span>.dev</span></span>
+    </div>
+    <div class="hero-tag">Proposta exclusiva para a Gráfica RL, Caruaru</div>
+    <h1>
+      Adesivo novo<br>
+      toda <span class="accent">semana</span>.<br>
+      <em>Estoque certo</em><br>
+      sempre.
+    </h1>
+    <p class="hero-desc">Uma loja online de adesivos para carro e moto, com um painel onde a própria gráfica cadastra os lançamentos, acompanha os pedidos e controla um estoque único para o site, o balcão, o Instagram e as feiras.</p>
+    <div class="hero-actions">
+      <a href="#solucao" class="btn-primary">Como funciona</a>
+      <a href="graficarl.html" target="_blank" class="btn-outline">Abrir protótipo da loja ↗</a>
+    </div>
+    <div class="hero-stats">
+      <div class="reveal"><div class="stat-num">1</div><div class="stat-label">Estoque para todos os canais</div></div>
+      <div class="reveal"><div class="stat-num">4</div><div class="stat-label">Canais de venda integrados</div></div>
+      <div class="reveal"><div class="stat-num">0%</div><div class="stat-label">Taxa sobre as vendas</div></div>
+      <div class="reveal"><div class="stat-num">30d</div><div class="stat-label">Prazo de entrega</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PREVIEW DO SITE DO CLIENTE -->
+<div class="container">
+  <div class="preview-card reveal">
+    <div class="preview-topbar">
+      <div class="preview-dots">
+        <div class="preview-dot" style="background:#FF5F57"></div>
+        <div class="preview-dot" style="background:#FFBD2E"></div>
+        <div class="preview-dot" style="background:#28CA41"></div>
+      </div>
+      <div class="preview-url">graficarl.com.br</div>
+      <a href="graficarl.html" target="_blank" class="preview-open">Abrir protótipo ↗</a>
+    </div>
+    <div class="preview-body">
+      <iframe src="graficarl.html" scrolling="no" tabindex="-1" title="Prévia do protótipo da loja"></iframe>
+      <div class="preview-overlay">
+        <a href="graficarl.html" target="_blank" class="btn-primary">Ver protótipo completo da loja</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROBLEMA -->
+<section class="problema" id="problema">
+  <div class="container">
+    <div class="section-tag">O desafio</div>
+    <h2 class="section-title reveal">Vender online é fácil.<br>Manter tudo em ordem, não.</h2>
+    <p class="section-sub reveal">A Gráfica RL já vende em vários lugares ao mesmo tempo. Colocar um site no ar sem um controle central só multiplica a bagunça.</p>
+    <div class="problema-grid reveal">
+      <div class="problema-item">
+        <span class="problema-icon">🆕</span>
+        <div class="problema-title">Lançamento toda semana</div>
+        <div class="problema-desc">Se cada adesivo novo depender de um programador para entrar no site, a loja fica sempre desatualizada.</div>
+      </div>
+      <div class="problema-item">
+        <span class="problema-icon">🔀</span>
+        <div class="problema-title">Estoque dividido entre canais</div>
+        <div class="problema-desc">Uma venda no balcão ou na feira que não é registrada faz o site oferecer um adesivo que já acabou.</div>
+      </div>
+      <div class="problema-item">
+        <span class="problema-icon">🖨️</span>
+        <div class="problema-title">Pronto e sob encomenda juntos</div>
+        <div class="problema-desc">Alguns adesivos ficam impressos na prateleira, outros saem da máquina só quando alguém pede. Os dois precisam conviver no mesmo catálogo.</div>
+      </div>
+      <div class="problema-item">
+        <span class="problema-icon">📉</span>
+        <div class="problema-title">Sem saber o que o site vende</div>
+        <div class="problema-desc">Sem registro por canal, não dá para saber se o site está trazendo vendas ou só perguntas no WhatsApp.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUÇÃO -->
+<section id="solucao">
+  <div class="container">
+    <div class="section-tag">A solução</div>
+    <h2 class="section-title reveal">Uma loja na frente.<br>Um controle central atrás.</h2>
+    <p class="section-sub reveal">Seis peças que trabalham juntas. Tudo incluso na implantação, sem módulos extras para contratar depois.</p>
+    <div class="modulos-grid">
+      <div class="modulo-card reveal">
+        <span class="badge-nucleo">Incluso</span>
+        <span class="modulo-icon">🛒</span>
+        <div class="modulo-num">01</div>
+        <div class="modulo-name">Loja de adesivos</div>
+        <div class="modulo-desc">Catálogo atualizado sozinho a partir do painel, com busca por aplicação (vidro, capacete, tanque), lançamentos da semana, variações de tamanho e acabamento, e kits.</div>
+        <div class="modulo-tags"><span class="modulo-tag">Mobile</span><span class="modulo-tag">Variações</span><span class="modulo-tag">Kits</span></div>
+      </div>
+      <div class="modulo-card reveal">
+        <span class="badge-nucleo">Incluso</span>
+        <span class="modulo-icon">🏷️</span>
+        <div class="modulo-num">02</div>
+        <div class="modulo-name">Cadastro de produtos</div>
+        <div class="modulo-desc">A gráfica sobe a foto, define preço e estoque de cada variação e publica. A foto é otimizada automaticamente para carregar rápido no celular.</div>
+        <div class="modulo-tags"><span class="modulo-tag">Sem programador</span><span class="modulo-tag">Fotos leves</span></div>
+      </div>
+      <div class="modulo-card reveal">
+        <span class="badge-nucleo">Incluso</span>
+        <span class="modulo-icon">📦</span>
+        <div class="modulo-num">03</div>
+        <div class="modulo-name">Pedidos do site</div>
+        <div class="modulo-desc">Cada pedido chega numerado, com itens, entrega escolhida e contato do cliente. O status acompanha o pedido do Pix até a entrega.</div>
+        <div class="modulo-tags"><span class="modulo-tag">WhatsApp</span><span class="modulo-tag">Pix</span><span class="modulo-tag">Status</span></div>
+      </div>
+      <div class="modulo-card reveal">
+        <span class="badge-nucleo">Incluso</span>
+        <span class="modulo-icon">⚡</span>
+        <div class="modulo-num">04</div>
+        <div class="modulo-name">Venda rápida</div>
+        <div class="modulo-desc">Tela feita para o celular, para registrar em segundos uma venda do balcão, do Instagram ou de uma feira. É ela que mantém o estoque do site verdadeiro.</div>
+        <div class="modulo-tags"><span class="modulo-tag">Balcão</span><span class="modulo-tag">Instagram</span><span class="modulo-tag">Feiras</span></div>
+      </div>
+      <div class="modulo-card reveal">
+        <span class="badge-nucleo">Incluso</span>
+        <span class="modulo-icon">🗃️</span>
+        <div class="modulo-num">05</div>
+        <div class="modulo-name">Estoque central</div>
+        <div class="modulo-desc">Um estoque para todos os canais, com reserva automática nos pedidos do site, itens sob encomenda com prazo de produção e histórico de cada entrada e saída.</div>
+        <div class="modulo-tags"><span class="modulo-tag">Reserva</span><span class="modulo-tag">Sob encomenda</span><span class="modulo-tag">Histórico</span></div>
+      </div>
+      <div class="modulo-card reveal">
+        <span class="badge-nucleo">Incluso</span>
+        <span class="modulo-icon">📊</span>
+        <div class="modulo-num">06</div>
+        <div class="modulo-name">Relatórios</div>
+        <div class="modulo-desc">Vendas por período e por canal, adesivos mais vendidos e alerta de estoque baixo. A resposta para "quanto o site está vendendo" fica a um clique.</div>
+        <div class="modulo-tags"><span class="modulo-tag">Por canal</span><span class="modulo-tag">Mais vendidos</span><span class="modulo-tag">Alertas</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLUXO -->
+<section id="fluxo" class="fluxo">
+  <div class="container">
+    <div class="section-tag">Como funciona</div>
+    <h2 class="section-title reveal">Do clique no adesivo<br>até a entrega.</h2>
+    <p class="section-sub reveal">O cliente continua comprando pelo WhatsApp, do jeito que já está acostumado. A diferença é que agora tudo fica registrado.</p>
+    <div class="fluxo-steps">
+      <div class="fluxo-step reveal">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <div class="step-title">Cliente monta o carrinho</div>
+          <div class="step-desc">Escolhe os adesivos, o tamanho, o acabamento e a forma de entrega. O site já mostra o total com frete.</div>
+          <div class="step-chips"><span class="step-chip">Variações</span><span class="step-chip">Kits</span><span class="step-chip">Frete na tela</span></div>
+        </div>
+      </div>
+      <div class="fluxo-step reveal">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <div class="step-title">Pedido registrado e estoque reservado</div>
+          <div class="step-desc">Ao finalizar, o pedido ganha um número e os itens prontos ficam reservados, para ninguém comprar o mesmo adesivo no balcão enquanto o Pix não chega.</div>
+          <div class="step-chips"><span class="step-chip">Número do pedido</span><span class="step-chip">Reserva automática</span></div>
+        </div>
+      </div>
+      <div class="fluxo-step reveal">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <div class="step-title">Conversa continua no WhatsApp</div>
+          <div class="step-desc">O WhatsApp da gráfica abre com a mensagem pronta: número do pedido, itens, entrega e valor. É só enviar a chave Pix.</div>
+          <div class="step-chips"><span class="step-chip">Mensagem pronta</span><span class="step-chip">Pix manual</span><span class="step-chip">Sem taxa</span></div>
+        </div>
+      </div>
+      <div class="fluxo-step reveal">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <div class="step-title">Pix confirmado no painel</div>
+          <div class="step-desc">Com um toque, o pedido vira "pago": o estoque é baixado e a venda entra no relatório do site. Se o cliente desistir, o cancelamento devolve os itens ao estoque.</div>
+          <div class="step-chips"><span class="step-chip">Baixa automática</span><span class="step-chip">Cancelamento</span></div>
+        </div>
+      </div>
+      <div class="fluxo-step reveal">
+        <div class="step-num">05</div>
+        <div class="step-content">
+          <div class="step-title">Produção e entrega</div>
+          <div class="step-desc">Itens sob encomenda entram em produção. O pedido segue para retirada na gráfica, entrega em Caruaru ou envio pelos Correios.</div>
+          <div class="step-chips"><span class="step-chip">Retirada</span><span class="step-chip">Entrega local</span><span class="step-chip">Correios</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="fluxo-paralelo reveal">
+      <div class="fluxo-paralelo-icon">🔁</div>
+      <div>
+        <div class="fluxo-paralelo-title">E as vendas fora do site?</div>
+        <div class="fluxo-paralelo-desc">Vendeu no balcão, no direct do Instagram ou numa feira? Registra na tela de venda rápida, escolhendo o canal. O estoque do site se atualiza na mesma hora e o relatório separa quanto veio de cada lugar.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAINEL -->
+<section id="painel">
+  <div class="container">
+    <div class="section-tag">O painel</div>
+    <h2 class="section-title reveal">Feito para quem<br>atende no balcão.</h2>
+    <p class="section-sub reveal">Telas simples, que funcionam no computador da gráfica e no celular. Ninguém precisa de treinamento longo para usar.</p>
+    <div class="painel-grid">
+      <div class="painel-card reveal">
+        <div class="painel-screen" aria-hidden="true">
+          <div class="ps-top"><div class="ps-title">Novo adesivo</div><div class="ps-btn">Publicar</div></div>
+          <div class="ps-field">Nome <b>Caveira Speed</b></div>
+          <div class="ps-field">Aplicação <b>Capacete, Tanque</b></div>
+          <table class="ps-table">
+            <tr><th>Variação</th><th>Preço</th><th>Estoque</th></tr>
+            <tr><td>5 cm fosco</td><td>R$ 6</td><td class="ps-ok">42</td></tr>
+            <tr><td>10 cm refletivo</td><td>R$ 14</td><td class="ps-low">3</td></tr>
+            <tr><td>20 cm vinil</td><td>R$ 22</td><td class="ps-enc">Encomenda</td></tr>
+          </table>
+        </div>
+        <div class="painel-info">
+          <div class="painel-name">Cadastro com variações</div>
+          <div class="painel-desc">Um adesivo, várias versões. Cada variação tem preço, estoque próprio ou marcação de sob encomenda.</div>
+        </div>
+      </div>
+      <div class="painel-card reveal">
+        <div class="painel-screen" aria-hidden="true">
+          <div class="ps-top"><div class="ps-title">Pedidos do site</div><div class="ps-btn">3 aguardando</div></div>
+          <table class="ps-table">
+            <tr><th>Nº</th><th>Cliente</th><th>Total</th><th>Status</th></tr>
+            <tr><td>#1042</td><td>Marcos</td><td>R$ 38</td><td class="ps-enc">Aguardando Pix</td></tr>
+            <tr><td>#1041</td><td>Juliana</td><td>R$ 64</td><td class="ps-ok">Pago</td></tr>
+            <tr><td>#1040</td><td>Renan</td><td>R$ 22</td><td class="ps-ok">Entregue</td></tr>
+            <tr><td>#1039</td><td>Carla</td><td>R$ 51</td><td class="ps-low">Cancelado</td></tr>
+          </table>
+        </div>
+        <div class="painel-info">
+          <div class="painel-name">Pedidos por status</div>
+          <div class="painel-desc">Confirmar o Pix, marcar como entregue ou cancelar: cada ação ajusta o estoque sozinha.</div>
+        </div>
+      </div>
+      <div class="painel-card reveal">
+        <div class="painel-screen" aria-hidden="true">
+          <div class="ps-top"><div class="ps-title">Venda rápida</div></div>
+          <div class="ps-chips"><span class="ps-chip on">Balcão</span><span class="ps-chip">Instagram</span><span class="ps-chip">Feira</span></div>
+          <div class="ps-field">Deus é Fiel 10 cm <b>2 × R$ 12</b></div>
+          <div class="ps-field">Kit Motoclube <b>1 × R$ 35</b></div>
+          <div class="ps-total"><span>Total</span><span>R$ 59,00</span></div>
+        </div>
+        <div class="painel-info">
+          <div class="painel-name">Venda rápida</div>
+          <div class="painel-desc">Escolhe o canal, toca nos adesivos e confirma. Menos de dez segundos por venda.</div>
+        </div>
+      </div>
+      <div class="painel-card reveal">
+        <div class="painel-screen" aria-hidden="true">
+          <div class="ps-top"><div class="ps-title">Vendas do mês por canal</div></div>
+          <div class="ps-bars">
+            <div class="ps-bar-row">Balcão<div class="ps-bar"><span style="width:78%"></span></div><b>R$ 1.940</b></div>
+            <div class="ps-bar-row">Site<div class="ps-bar"><span style="width:52%"></span></div><b>R$ 1.290</b></div>
+            <div class="ps-bar-row">Instagram<div class="ps-bar"><span style="width:30%"></span></div><b>R$ 740</b></div>
+            <div class="ps-bar-row">Feiras<div class="ps-bar"><span style="width:18%"></span></div><b>R$ 450</b></div>
+          </div>
+          <div class="ps-total"><span>Estoque baixo</span><span>4 adesivos</span></div>
+        </div>
+        <div class="painel-info">
+          <div class="painel-name">Relatórios e alertas</div>
+          <div class="painel-desc">Quanto cada canal vende, o que mais sai e o que está acabando. Valores da tela são ilustrativos.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section id="stack" class="fluxo">
+  <div class="container">
+    <div class="section-tag">Tecnologia</div>
+    <h2 class="section-title reveal">Leve, rápido<br>e barato de manter.</h2>
+    <p class="section-sub reveal">Ferramentas do Google escolhidas para que o custo de funcionamento fique praticamente zerado com o volume de vendas previsto.</p>
+    <div class="stack-grid">
+      <div class="stack-item reveal"><span class="stack-icon">🔥</span><div class="stack-name">Firestore</div><div class="stack-role">Produtos, pedidos e estoque em tempo real</div></div>
+      <div class="stack-item reveal"><span class="stack-icon">🔐</span><div class="stack-name">Firebase Auth</div><div class="stack-role">Login seguro do painel</div></div>
+      <div class="stack-item reveal"><span class="stack-icon">🌐</span><div class="stack-name">Firebase Hosting</div><div class="stack-role">Site no ar com HTTPS</div></div>
+      <div class="stack-item reveal"><span class="stack-icon">🖼️</span><div class="stack-name">Cloud Storage</div><div class="stack-role">Fotos dos adesivos</div></div>
+      <div class="stack-item reveal"><span class="stack-icon">💬</span><div class="stack-name">Link do WhatsApp</div><div class="stack-role">Pedido direto no número da gráfica</div></div>
+      <div class="stack-item reveal"><span class="stack-icon">⚡</span><div class="stack-name">JavaScript puro</div><div class="stack-role">Carrega rápido até em 4G fraco</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRECOS -->
+<section id="precos">
+  <div class="container">
+    <div class="section-tag">Investimento</div>
+    <h2 class="section-title reveal">Um valor de implantação.<br>Uma mensalidade justa.</h2>
+    <p class="section-sub reveal">Sem pacotes para escolher: tudo o que está nesta proposta entra na implantação.</p>
+    <div class="precos-grid dois">
+      <div class="preco-card destaque reveal">
+        <div class="preco-nome">Loja + painel completo</div>
+        <div class="preco-valor">R$2.000</div>
+        <div class="preco-periodo">desenvolvimento único</div>
+        <div class="preco-divider"></div>
+        <div class="preco-items">
+          <div class="preco-item"><div class="preco-item-dot"></div>Loja de adesivos com a identidade da Gráfica RL</div>
+          <div class="preco-item"><div class="preco-item-dot"></div>Variações, kits e itens sob encomenda</div>
+          <div class="preco-item"><div class="preco-item-dot"></div>Carrinho com frete e pedido pelo WhatsApp</div>
+          <div class="preco-item"><div class="preco-item-dot"></div>Painel de produtos, pedidos e venda rápida</div>
+          <div class="preco-item"><div class="preco-item-dot"></div>Estoque central com reserva e histórico</div>
+          <div class="preco-item"><div class="preco-item-dot"></div>Relatórios por canal e alerta de estoque baixo</div>
+          <div class="preco-item"><div class="preco-item-dot"></div>Configuração do domínio e publicação</div>
+          <div class="preco-item"><div class="preco-item-dot"></div>Treinamento da equipe</div>
+        </div>
+      </div>
+      <div class="preco-card reveal">
+        <div class="preco-nome">Manutenção mensal</div>
+        <div class="preco-valor">R$200</div>
+        <div class="preco-periodo">por mês</div>
+        <div class="preco-divider"></div>
+        <div class="preco-items">
+          <div class="preco-item"><div class="preco-item-dot"></div>Acompanhamento da hospedagem e do banco de dados</div>
+          <div class="preco-item"><div class="preco-item-dot"></div>Correção de erros sem custo extra</div>
+          <div class="preco-item"><div class="preco-item-dot"></div>Pequenos ajustes no site e no painel</div>
+          <div class="preco-item"><div class="preco-item-dot"></div>Backup periódico dos dados</div>
+          <div class="preco-item"><div class="preco-item-dot"></div>Suporte direto pelo WhatsApp com quem desenvolveu</div>
+        </div>
+        <div class="mens-note">Começa <span>30 dias</span> após a loja entrar no ar</div>
+      </div>
+    </div>
+
+    <div class="custos-box reveal">
+      <div class="custos-title">Custos de terceiros, com transparência</div>
+      <div class="custos-sub">Estes itens não são cobrados pela 42.dev. Ficam no nome da Gráfica RL, que é dona de tudo.</div>
+      <div class="custos-list">
+        <div class="custos-row"><div>Domínio .com.br</div><div>Pago uma vez por ano direto ao Registro.br.</div></div>
+        <div class="custos-row"><div>Firebase (Google)</div><div>O armazenamento de fotos exige o plano Blaze, com cartão cadastrado. Esse plano mantém uma cota de uso sem custo, e para o volume previsto de vendas a expectativa é não haver cobrança.</div></div>
+        <div class="custos-row"><div>WhatsApp</div><div>Sem custo. O pedido usa o link comum do WhatsApp, sem API paga.</div></div>
+      </div>
+    </div>
+    <p class="pagamento-note">Condições: <span>50%</span> na assinatura do contrato e <span>50%</span> na entrega.</p>
+  </div>
+</section>
+
+<!-- COMPARATIVO -->
+<section id="comparativo" class="precos">
+  <div class="container">
+    <div class="section-tag">Comparativo</div>
+    <h2 class="section-title reveal">Plataforma pronta<br>ou sistema próprio?</h2>
+    <p class="section-sub reveal">A Nuvemshop é uma boa plataforma e tem até plano grátis. Colocamos lado a lado, com os números oficiais dela, para a decisão ser tomada com clareza.</p>
+
+    <div class="comp-table reveal">
+      <div class="comp-scroll">
+        <div class="comp-inner">
+          <div class="comp-row comp-head">
+            <div>Recurso</div>
+            <div>Nuvemshop Começo<small>grátis</small></div>
+            <div>Nuvemshop Essencial<small>R$ 69/mês</small></div>
+            <div>42.dev<small>R$ 2.000 + R$ 200/mês</small></div>
+          </div>
+          <div class="comp-row">
+            <div>Domínio próprio<span class="rotulo-sub">Endereço com o nome da gráfica</span></div>
+            <div><span class="nao">✗</span></div>
+            <div><span class="sim">✓</span></div>
+            <div><span class="sim">✓</span></div>
+          </div>
+          <div class="comp-row">
+            <div>Tarifa por venda<span class="rotulo-sub">Quando o pagamento não passa pelo Nuvem Pago</span></div>
+            <div><span class="parcial">2%</span></div>
+            <div><span class="parcial">2%</span></div>
+            <div><span class="sim">0%</span><span class="obs">Pix direto na conta</span></div>
+          </div>
+          <div class="comp-row">
+            <div>Layout editável no código<span class="rotulo-sub">Visual exclusivo, sem cara de modelo</span></div>
+            <div><span class="nao">✗</span></div>
+            <div><span class="nao">✗</span><span class="obs">a partir do Impulso, R$ 164/mês</span></div>
+            <div><span class="sim">✓</span></div>
+          </div>
+          <div class="comp-row">
+            <div>Suporte pelo WhatsApp</div>
+            <div><span class="nao">✗</span><span class="obs">autoatendimento</span></div>
+            <div><span class="nao">✗</span><span class="obs">e-mail e Messenger</span></div>
+            <div><span class="sim">✓</span><span class="obs">com quem desenvolveu</span></div>
+          </div>
+          <div class="comp-row">
+            <div>Ajustes sob medida para a operação<span class="rotulo-sub">Mudanças no fluxo, telas e regras de estoque</span></div>
+            <div><span class="parcial">~</span><span class="obs">contratar à parte</span></div>
+            <div><span class="parcial">~</span><span class="obs">contratar à parte</span></div>
+            <div><span class="sim">✓</span><span class="obs">pequenos ajustes inclusos</span></div>
+          </div>
+          <div class="comp-row comp-foot">
+            <div>Custo no 1º ano</div>
+            <div><div class="valor">TARIFAS POR VENDA</div></div>
+            <div><div class="valor">tarifas por venda</div><span class="obs">+ R$828,00</span></div>
+            <div><div class="valor">R$ 2.000</div><span class="obs">Desenvolvimento</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="comp-fonte">Valores e recursos da Nuvemshop conferidos em setembro de 2026 na página oficial de planos (<a href="https://www.nuvemshop.com.br/blog/planos-nuvemshop/" target="_blank" rel="noopener">nuvemshop.com.br</a>). Podem mudar a qualquer momento.</p>
+
+    <div class="argumentos-grid">
+      <div class="argumento forte reveal">
+        <div class="argumento-icon">🎯</div>
+        <div class="argumento-title">Feito para a rotina da gráfica</div>
+        <div class="argumento-desc">Pedido fechado no WhatsApp com Pix, estoque reservado, adesivo pronto e sob encomenda no mesmo catálogo, venda de balcão em dez segundos. O sistema segue o jeito que a Gráfica RL já trabalha.</div>
+      </div>
+      <div class="argumento reveal">
+        <div class="argumento-icon">🔑</div>
+        <div class="argumento-title">O sistema é de vocês</div>
+        <div class="argumento-desc">Domínio, banco de dados e conta do Google ficam no nome da gráfica. Nenhuma plataforma pode mudar regras, subir tarifas ou tirar a loja do ar.</div>
+      </div>
+      <div class="argumento reveal">
+        <div class="argumento-icon">📞</div>
+        <div class="argumento-title">Quem fez, atende</div>
+        <div class="argumento-desc">A mensalidade inclui suporte direto e pequenos ajustes. Precisou mudar algo na loja? É uma mensagem no WhatsApp, sem abrir chamado e sem procurar outro profissional.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CRONOGRAMA -->
+<section id="cronograma">
+  <div class="container">
+    <div class="section-tag">Cronograma</div>
+    <h2 class="section-title reveal">30 dias do contrato<br>até a loja no ar.</h2>
+    <p class="section-sub reveal">Quatro etapas, com uma entrega para a gráfica ver e aprovar ao fim de cada uma.</p>
+    <div class="cronograma-grid reveal">
+      <div class="crono-fase"><div class="crono-num">01</div><div class="crono-title">Levantamento</div><div class="crono-semanas">Semana 1</div><div class="crono-desc">Variações, kits, tabela de frete e primeiras fotos</div></div>
+      <div class="crono-fase"><div class="crono-num">02</div><div class="crono-title">Loja</div><div class="crono-semanas">Semana 2</div><div class="crono-desc">Catálogo, carrinho e pedido pelo WhatsApp</div></div>
+      <div class="crono-fase"><div class="crono-num">03</div><div class="crono-title">Painel</div><div class="crono-semanas">Semana 3</div><div class="crono-desc">Produtos, pedidos, venda rápida, estoque e relatórios</div></div>
+      <div class="crono-fase"><div class="crono-num">04</div><div class="crono-title">Publicação</div><div class="crono-semanas">Semana 4</div><div class="crono-desc">Testes, treinamento e loja no ar</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-glow"></div>
+  <div class="container">
+    <div class="section-tag" style="justify-content:center">Próximo passo</div>
+    <h2>Bora colocar<br><span style="color:var(--accent)">a loja no ar?</span></h2>
+    <p>Proposta válida por 30 dias. 50% na assinatura, 50% na entrega.<br>Manutenção começa 30 dias após a publicação.</p>
+    <div class="cta-actions">
+      <a href="https://wa.me/5581981279574" class="btn-primary" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      <a href="mailto:augustolopes230@gmail.com" class="btn-outline">Enviar e-mail</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-copy">© 2026 42.dev. Todos os direitos reservados</div>
+      <div class="footer-badge">Loja em <span>● produção</span> em 30 dias</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx - 4 + 'px'; cursor.style.top = my - 4 + 'px'; });
+  function animRing() { rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12; ring.style.left = rx - 16 + 'px'; ring.style.top = ry - 16 + 'px'; requestAnimationFrame(animRing); }
+  animRing();
+  document.querySelectorAll('a, button').forEach(el => { el.addEventListener('mouseenter', () => { ring.style.transform = 'scale(1.5)'; ring.style.borderColor = 'rgba(249,115,22,0.8)'; }); el.addEventListener('mouseleave', () => { ring.style.transform = 'scale(1)'; ring.style.borderColor = 'rgba(249,115,22,0.5)'; }); });
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+  reveals.forEach(el => obs.observe(el));
+  document.querySelectorAll('.hero-stats .reveal').forEach((el, i) => { el.style.transitionDelay = (i * 0.1) + 's'; });
+</script>
+</body>
+</html>
